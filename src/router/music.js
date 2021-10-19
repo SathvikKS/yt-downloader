@@ -41,7 +41,7 @@ router.get('/music/', async (req, res) => {
 
 
 })
-router.get('/music/', async (req, res) => {
+router.get('/music/check', async (req, res) => {
     res.send('Working')
 })
 
