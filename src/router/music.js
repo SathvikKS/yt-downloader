@@ -20,7 +20,6 @@ router.get('/music/', async (req, res) => {
         quality: 'highestaudio'
     })
     const musicSavePath = `${path.join(__dirname, '../../public/music')}\\${videoID}.mp3`
-    console.log(musicSavePath)
     ffmpeg(download)
         .audioBitrate(320)
         .save(musicSavePath)
